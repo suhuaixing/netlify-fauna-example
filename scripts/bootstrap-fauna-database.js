@@ -3,7 +3,7 @@ const faunadb = require('faunadb')
 const chalk = require('chalk')
 const insideNetlify = insideNetlifyBuildContext()
 const q = faunadb.query
-
+require('dotenv').config()
 console.log(chalk.cyan('Creating your FaunaDB Database...\n'))
 
 // 1. Check for required enviroment variables
